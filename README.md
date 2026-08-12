@@ -1,6 +1,6 @@
 <div align="center">
 
-# 💼 Abhijeet's Portfolio Website
+# 💼 Bobby's Portfolio Website
 
 </div>
 
@@ -76,11 +76,11 @@ A modern, responsive personal portfolio website showcasing my work as a full-sta
 
 ## 📸 Live Preview
 
-👉 [Live Demo](https://abhijeetbhale.github.io/Portfolio/)
+👉 [Live Demo](https://devxbk.github.io/Portfolio/)
 
 ## 📸 Screenshot
 
-![Portfolio Website](https://github.com/abhijeetBhale/Portfolio/blob/4153aac777d27ad5cc2aaa4ded9a3b347b8c8d9e/assets/portfolio-ss.png)
+![Portfolio Website](https://github.com/devxbk/Portfolio/blob/4153aac777d27ad5cc2aaa4ded9a3b347b8c8d9e/assets/portfolio-ss.png)
 
 ---
 
@@ -88,7 +88,7 @@ A modern, responsive personal portfolio website showcasing my work as a full-sta
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/abhijeetBhale/Portfolio.git
+   git clone https://github.com/devxbk/Portfolio.git
    cd Portfolio
    ```
 
@@ -165,8 +165,8 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 📞 Contact
 
-- **Email**: abhijeetbhale7@gmail.com
-- **LinkedIn**: [Abhijeet Bhale](https://www.linkedin.com/in/abhijeetbhale7)
-- **GitHub**: [@abhijeetBhale](https://github.com/abhijeetBhale)
-- **Instagram**: [@isocyanideisgood](https://www.instagram.com/isocyanideisgood)
+- **Email**: bobbydev08@gmail.com
+- **LinkedIn**: [Bobby Kumar](https://www.linkedin.com/in/devxbk)
+- **GitHub**: [@devxbk](https://github.com/devxbk)
+- **Instagram**: [@devxbk](https://www.instagram.com/devxbk)
 
