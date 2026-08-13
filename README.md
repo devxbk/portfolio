@@ -14,7 +14,7 @@ A modern, responsive personal portfolio website showcasing my work as a full-sta
 - Responsive design for all screen sizes  
 - Interactive hamburger menu for mobile view  
 - Hero section with animated name using GSAP  
-- Snowfall particle background using [particles.js](http://vincentgarreau.com/particles.js/#snow)  
+- Flow field background using [particles.js](http://vincentgarreau.com/particles.js/#snow)  
 - Stylish "View Projects" button with neon glow effect  
 - Smooth scroll and clean layout  
 - Custom cursor implementation
