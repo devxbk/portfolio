@@ -782,7 +782,7 @@ document.addEventListener('DOMContentLoaded', function() {
       try {
         // Option 1: Using Formspree (you need to create your own endpoint)
         // Replace 'YOUR_FORMSPREE_ENDPOINT' with your actual Formspree endpoint
-        const response = await fetch('https://formspree.io/f/mjkrlgar', {
+        const response = await fetch('https://formspree.io/f/mnpazzqr', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -935,6 +935,12 @@ document.addEventListener('DOMContentLoaded', function() {
         // Calculate total stars
         const totalStars = reposData.reduce((sum, repo) => sum + repo.stargazers_count, 0);
         document.getElementById('githubStars').textContent = totalStars;
+
+        const footerStars = document.getElementById('footerGithubStars');
+
+        if (footerStars) {
+          footerStars.textContent = totalStars;
+        }
 
         // Calculate recent commits (last 30 days)
         const thirtyDaysAgo = new Date();
