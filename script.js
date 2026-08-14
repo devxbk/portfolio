@@ -546,7 +546,6 @@ gsap.from(".project-card", {
   });
 
   // Up coming projects
-
   gsap.utils.toArray(".upcoming-card").forEach((card, i) => {
     gsap.from(card, {
       scrollTrigger: {
@@ -570,8 +569,10 @@ gsap.from(".project-card", {
     if (downloadInput && downloadLink) {
       downloadInput.addEventListener('change', function() {
         if (this.checked) {
+
           // Trigger the download after animation starts
           setTimeout(() => {
+
             // Create a temporary link to trigger download
             const tempLink = document.createElement('a');
             tempLink.href = downloadLink.href;
@@ -780,8 +781,8 @@ document.addEventListener('DOMContentLoaded', function() {
       };
 
       try {
-        // Option 1: Using Formspree (you need to create your own endpoint)
-        // Replace 'YOUR_FORMSPREE_ENDPOINT' with your actual Formspree endpoint
+
+        // Formspree endpoint
         const response = await fetch('https://formspree.io/f/mnpazzqr', {
           method: 'POST',
           headers: {
@@ -814,6 +815,7 @@ ${data.message}
         
         showMessage(`Form submission failed. <a href="${mailtoLink}" class="underline">Click here to send email directly</a> or try again later.`, 'error');
       } finally {
+
         // Reset button state
         submitBtn.disabled = false;
         submitText.classList.remove('hidden');
@@ -835,7 +837,8 @@ ${data.message}
 });
   
 // Performance Optimizations - Lazy Loading
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
+  
   // Lazy loading for images
   const lazyImages = document.querySelectorAll('img[data-src]');
   
@@ -960,6 +963,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     } catch (error) {
       console.error('Error fetching GitHub data:', error);
+      
       // Show fallback data
       document.getElementById('githubRepos').textContent = '15+';
       document.getElementById('githubStars').textContent = '25+';
