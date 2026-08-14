@@ -98,7 +98,7 @@ A modern, responsive personal portfolio website showcasing my work as a full-sta
    python -m http.server 8000
    
    # Using Node.js
-   npx serve .
+   npx server .
    
    # Or simply open index.html in your browser
    ```
@@ -119,9 +119,9 @@ Portfolio/
 ├── styles.css          # Custom styles and animations
 ├── script.js           # JavaScript functionality
 ├── manifest.json       # PWA manifest
-├── sw.js              # Service Worker
-├── assets/            # Images and media files
-└── README.md          # Project documentation
+├── sw.js               # Service Worker
+├── assets/             # Images and media files
+└── README.md           # Project documentation
 ```
 
 ---
