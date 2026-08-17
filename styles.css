@@ -1,79 +1,79 @@
 /* Reset & basic setup */
-@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body {
-    font-family: "Special Gothic Expanded One", sans-serif; 
-    background-color: #000;
-    color: #fff;
-    overflow: -moz-scrollbars-none; /* For Firefox */
-    -ms-overflow-style: none; /* For Internet Explorer 10+ */
-    scrollbar-width: none; /* For Firefox */
-    /* scroll-behavior: smooth; */
-  }
-  
-  /* Hide scrollbar for all browsers */
-  body::-webkit-scrollbar {
-    display: none; /* For Chrome, Safari, and Opera */
-  }
-  
-  /* Hide scrollbar for all elements */
-  *::-webkit-scrollbar {
-    display: none; /* For Chrome, Safari, and Opera */
-  }
-  
-  /* Hide scrollbar for Firefox */
-  * {
-    scrollbar-width: none; /* For Firefox */
-    -ms-overflow-style: none; /* For Internet Explorer 10+ */
-  }
-  
-  /* Hide scrollbar for specific elements that might have scrollbars */
-  html::-webkit-scrollbar,
-  .container::-webkit-scrollbar,
-  .container-fluid::-webkit-scrollbar,
-  section::-webkit-scrollbar,
-  div::-webkit-scrollbar {
-    display: none;
-  }
-  
-  /* Ensure smooth scrolling is enabled */
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  /* Additional scrollbar hiding for specific elements */
-  .code-box::-webkit-scrollbar,
-  .project-card::-webkit-scrollbar,
-  .upcoming-card::-webkit-scrollbar,
-  .journey-card::-webkit-scrollbar {
-    display: none;
-  }
-  
-  /* Custom scroll indicator styling */
-  #scroll-indicator {
-    position: relative;
-    z-index: 1000;
-  }
-  
-  /* Ensure no scrollbars appear on any scrollable content */
-  .overflow-auto::-webkit-scrollbar,
-  .overflow-scroll::-webkit-scrollbar,
-  .overflow-y-auto::-webkit-scrollbar,
-  .overflow-x-auto::-webkit-scrollbar {
-    display: none;
-  }
-  
-  a {
-    text-decoration: none;
-    color: white;
-  }
-  
-  /* Loading screen */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Special Gothic Expanded One", sans-serif;
+  background-color: #000;
+  color: #fff;
+  overflow: -moz-scrollbars-none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer 10+ */
+  scrollbar-width: none; /* For Firefox */
+  /* scroll-behavior: smooth; */
+}
+
+/* Hide scrollbar for all browsers */
+body::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+/* Hide scrollbar for all elements */
+*::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+/* Hide scrollbar for Firefox */
+* {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer 10+ */
+}
+
+/* Hide scrollbar for specific elements that might have scrollbars */
+html::-webkit-scrollbar,
+.container::-webkit-scrollbar,
+.container-fluid::-webkit-scrollbar,
+section::-webkit-scrollbar,
+div::-webkit-scrollbar {
+  display: none;
+}
+
+/* Ensure smooth scrolling is enabled */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Additional scrollbar hiding for specific elements */
+.code-box::-webkit-scrollbar,
+.project-card::-webkit-scrollbar,
+.upcoming-card::-webkit-scrollbar,
+.journey-card::-webkit-scrollbar {
+  display: none;
+}
+
+/* Custom scroll indicator styling */
+#scroll-indicator {
+  position: relative;
+  z-index: 1000;
+}
+
+/* Ensure no scrollbars appear on any scrollable content */
+.overflow-auto::-webkit-scrollbar,
+.overflow-scroll::-webkit-scrollbar,
+.overflow-y-auto::-webkit-scrollbar,
+.overflow-x-auto::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Loading screen */
 #loading {
   position: fixed;
   inset: 0;
@@ -100,14 +100,13 @@
   position: absolute;
   top: 0;
   left: 0;
-  color: #1DCD9F;
+  color: #1dcd9f;
   opacity: 0;
 }
 
-  
-  /* Home page Name Animation  */
+/* Home page Name Animation  */
 
-  /* === removing default button style ===*/
+/* === removing default button style ===*/
 .button {
   margin: 0;
   height: auto;
@@ -120,10 +119,10 @@
 /* button styling */
 .button {
   --border-right: 6px;
-  --text-stroke-color: rgba(255,255,255,0.6);
-  --animation-color: #1DCD9F;
+  --text-stroke-color: rgba(255, 255, 255, 0.6);
+  --animation-color: #1dcd9f;
   --fs-size: 2em;
-  letter-spacing: 3px; 
+  letter-spacing: 3px;
   text-decoration: none;
   font-size: var(--fs-size);
   font-family: "Special Gothic Expanded One", sans-serif;
@@ -151,13 +150,11 @@
   width: 100%;
   filter: drop-shadow(0 0 23px var(--animation-color));
 }
-  
-/* Hero View Project Button */
 
-.lead{
+/* Hero View Project Button */
+.lead {
   margin-bottom: 30px;
 }
-
 
 .shadow__btn {
   /* margin-top: 120px; */
@@ -177,15 +174,16 @@
 }
 
 .shadow__btn:hover {
-  box-shadow: 0 0 5px rgb(0, 140, 255),
-              0 0 25px rgb(0, 140, 255),
-              0 0 50px rgb(0, 140, 255),
-              0 0 100px rgb(0, 140, 255);
+  box-shadow:
+    0 0 5px rgb(0, 140, 255),
+    0 0 25px rgb(0, 140, 255),
+    0 0 50px rgb(0, 140, 255),
+    0 0 100px rgb(0, 140, 255);
 }
 
 /* Hero mail  */
 .fixed-email {
-  font-family: 'Special Gothic Expanded One', sans-serif;
+  font-family: "Special Gothic Expanded One", sans-serif;
   position: fixed;
   left: 0;
   top: 50%;
@@ -194,7 +192,7 @@
   writing-mode: vertical-rl;
   text-orientation: mixed;
   font-size: 0.8rem;
-  color: #1DCD9F;
+  color: #1dcd9f;
   text-decoration: none;
   letter-spacing: 2px;
   z-index: 999;
@@ -206,412 +204,409 @@
   cursor: pointer;
 }
 
+/* About me  */
+/* Removed old dbutton styles - replaced with animated download button */
 
-  /* About me  */
-  /* Removed old dbutton styles - replaced with animated download button */
-  
-  /* Journey Section  */
-  .group {
-    transition: all 0.3s ease-in-out;
-  }
-  
-  /* Mobile menu */
-  #mobileMenu a {
-    color: white;
-    text-decoration: none;
-    transition: all 0.3s ease;
-  }
-  #mobileMenu a:hover {
-    color: #0d6efd;
-  }
-  
-  
-  /* Hero section */
-  .hero {
-    min-height: 90vh;
-    gap: 3rem;
-    flex-wrap: wrap;
-  }
-  
-  .hero-left {
-    flex: 1 1 45%;
-  }
-  
-  .hero-right {
-    flex: 1 1 45%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .code-box {
-    background-color: #1e1e1e;
-    color: #dcdcdc;
-    width: 100%;
-    max-width: 500px;
-    font-family: "Special Gothic Expanded One", sans-serif;    font-size: 1rem;
-    overflow: auto;
-    border-left: 4px solid #0d6efd;
-    transition: transform 0.3s ease;
-  }
-  
-  .code-box:hover {
-    transform: scale(1.03);
-  }
-  
-  .view-projects-btn {
-    transition: all 0.3s ease;
-  }
-  
-  .view-projects-btn:hover {
-    transform: scale(1.05);
-    background-color: #0d6efd;
-    color: white;
-  }
-  
-  /* About Section  */
-  #about i{
-    font-size: 30px;
-  }
+/* Journey Section  */
+.group {
+  transition: all 0.3s ease-in-out;
+}
 
-  /* Tech Stack */
-  #techstack i {
-    font-size: 50px;
+/* Mobile menu */
+#mobileMenu a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+#mobileMenu a:hover {
+  color: #0d6efd;
+}
+
+/* Hero section */
+.hero {
+  min-height: 90vh;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.hero-left {
+  flex: 1 1 45%;
+}
+
+.hero-right {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.code-box {
+  background-color: #1e1e1e;
+  color: #dcdcdc;
+  width: 100%;
+  max-width: 500px;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-size: 1rem;
+  overflow: auto;
+  border-left: 4px solid #0d6efd;
+  transition: transform 0.3s ease;
+}
+
+.code-box:hover {
+  transform: scale(1.03);
+}
+
+.view-projects-btn {
+  transition: all 0.3s ease;
+}
+
+.view-projects-btn:hover {
+  transform: scale(1.05);
+  background-color: #0d6efd;
+  color: white;
+}
+
+/* About Section  */
+#about i {
+  font-size: 30px;
+}
+
+/* Tech Stack */
+#techstack i {
+  font-size: 50px;
+}
+
+#framer {
+  color: white;
+}
+
+/* Animated Social Icons */
+ul {
+  list-style: none;
+}
+
+li::after {
+  content: "";
+  display: block;
+  height: 0px;
+  transition: height 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+li:hover::after {
+  height: 10px;
+}
+
+.example-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  /* margin-bottom: 1.5rem; */
+}
+
+.example-2 .icon-content {
+  margin: 0 10px;
+  position: relative;
+}
+
+.example-2 .icon-content .tooltip {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.example-2 .icon-content:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  bottom: -40px;
+}
+
+.example-2 .icon-content a {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #4d4d4d;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.example-2 .icon-content a:hover {
+  box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+}
+
+.example-2 .icon-content a svg {
+  position: relative;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+}
+
+.example-2 .icon-content a:hover {
+  color: white;
+}
+
+.example-2 .icon-content a .filled {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+}
+
+.example-2 .icon-content a:hover .filled {
+  height: 100%;
+}
+
+.example-2 .icon-content a[data-social="instagram"] .filled,
+.example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
+  background-color: #e1306c;
+}
+
+.example-2 .icon-content a[data-social="linkedin"] .filled,
+.example-2 .icon-content a[data-social="linkedin"] ~ .tooltip {
+  background-color: #0a66c2;
+}
+
+.example-2 .icon-content a[data-social="email"] .filled,
+.example-2 .icon-content a[data-social="email"] ~ .tooltip {
+  background-color: #ea4335;
+}
+
+.example-2 .icon-content a[data-social="github"] .filled,
+.example-2 .icon-content a[data-social="github"] ~ .tooltip {
+  background-color: #333;
+}
+
+/* Animated Download Button */
+.download-container {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.download-label {
+  background-color: transparent;
+  border: 2px solid #1dcd9f;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  width: 160px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  padding: 5px;
+  position: relative;
+}
+
+.download-label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  width: 8px;
+  height: 8px;
+  transition: all 0.4s ease;
+  border-radius: 100%;
+  margin: auto;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.download-label .download-input {
+  display: none;
+}
+
+.download-label .download-title {
+  font-size: 17px;
+  color: #fff;
+  transition: all 0.4s ease;
+  position: absolute;
+  right: 18px;
+  bottom: 14px;
+  text-align: center;
+}
+
+.download-label .download-title:last-child {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.download-label .download-circle {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-color: #1dcd9f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+  position: relative;
+  box-shadow: 0 0 0 0 rgb(255, 255, 255);
+  overflow: hidden;
+}
+
+.download-label .download-circle .download-icon {
+  color: #fff;
+  width: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s ease;
+}
+
+.download-label .download-circle .download-square {
+  aspect-ratio: 1;
+  width: 15px;
+  border-radius: 2px;
+  background-color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s ease;
+}
+
+.download-label .download-circle::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #17b890;
+  width: 100%;
+  height: 0;
+  transition: all 0.4s ease;
+}
+
+.download-label:has(.download-input:checked) {
+  width: 57px;
+  animation: installed 0.4s ease 3.5s forwards;
+}
+
+.download-label:has(.download-input:checked)::before {
+  animation: rotate 3s ease-in-out 0.4s forwards;
+}
+
+.download-label .download-input:checked + .download-circle {
+  animation:
+    pulse 1s forwards,
+    circleDelete 0.2s ease 3.5s forwards;
+  rotate: 180deg;
+}
+
+.download-label .download-input:checked + .download-circle::before {
+  animation: installing 3s ease-in-out forwards;
+}
+
+.download-label .download-input:checked + .download-circle .download-icon {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.download-label .download-input:checked ~ .download-circle .download-square {
+  opacity: 1;
+  visibility: visible;
+}
+
+.download-label .download-input:checked ~ .download-title {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.download-label .download-input:checked ~ .download-title:last-child {
+  animation: showInstalledMessage 0.4s ease 3.5s forwards;
+}
+
+@keyframes pulse {
+  0% {
+    scale: 0.95;
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
   }
-  
-
-  #framer{
-
-    color: white;
+  70% {
+    scale: 1;
+    box-shadow: 0 0 0 16px rgba(255, 255, 255, 0);
   }
-
-  /* Animated Social Icons */
-  ul {
-    list-style: none;
+  100% {
+    scale: 0.95;
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
   }
+}
 
-  li::after {
-    content: "";
-    display: block;
-    height: 0px;
-    transition: height 0.3s ease-in-out;
-    pointer-events: none;
-  }
-
-  li:hover::after {
-    height: 10px;
-  }
-
-  .example-2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    /* margin-bottom: 1.5rem; */
-  }
-
-  .example-2 .icon-content {
-    margin: 0 10px;
-    position: relative;
-  }
-
-  .example-2 .icon-content .tooltip {
-    position: absolute;
-    bottom: -30px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #fff;
-    padding: 6px 10px;
-    border-radius: 5px;
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
-    font-size: 14px;
-    transition: all 0.3s ease;
-  }
-
-  .example-2 .icon-content:hover .tooltip {
-    opacity: 1;
-    visibility: visible;
-    bottom: -40px;
-  }
-
-  .example-2 .icon-content a {
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    color: #4d4d4d;
-    background-color: #fff;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .example-2 .icon-content a:hover {
-    box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
-  }
-
-  .example-2 .icon-content a svg {
-    position: relative;
-    z-index: 1;
-    width: 30px;
-    height: 30px;
-  }
-
-  .example-2 .icon-content a:hover {
-    color: white;
-  }
-
-  .example-2 .icon-content a .filled {
-    position: absolute;
-    top: auto;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+@keyframes installing {
+  from {
     height: 0;
-    background-color: #000;
-    transition: all 0.3s ease-in-out;
   }
-
-  .example-2 .icon-content a:hover .filled {
+  to {
     height: 100%;
   }
+}
 
-  .example-2 .icon-content a[data-social="instagram"] .filled,
-  .example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
-    background-color: #e1306c;
-  }
-
-  .example-2 .icon-content a[data-social="linkedin"] .filled,
-  .example-2 .icon-content a[data-social="linkedin"] ~ .tooltip {
-    background-color: #0a66c2;
-  }
-
-  .example-2 .icon-content a[data-social="email"] .filled,
-  .example-2 .icon-content a[data-social="email"] ~ .tooltip {
-    background-color: #ea4335;
-  }
-
-  .example-2 .icon-content a[data-social="github"] .filled,
-  .example-2 .icon-content a[data-social="github"] ~ .tooltip {
-    background-color: #333;
-  }
-
-  /* Animated Download Button */
-  .download-container {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .download-label {
-    background-color: transparent;
-    border: 2px solid #1DCD9F;
-    display: flex;
-    align-items: center;
-    border-radius: 50px;
-    width: 160px;
-    cursor: pointer;
-    transition: all 0.4s ease;
-    padding: 5px;
-    position: relative;
-  }
-
-  .download-label::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #fff;
-    width: 8px;
-    height: 8px;
-    transition: all 0.4s ease;
-    border-radius: 100%;
-    margin: auto;
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  .download-label .download-input {
-    display: none;
-  }
-
-  .download-label .download-title {
-    font-size: 17px;
-    color: #fff;
-    transition: all 0.4s ease;
-    position: absolute;
-    right: 18px;
-    bottom: 14px;
-    text-align: center;
-  }
-
-  .download-label .download-title:last-child {
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  .download-label .download-circle {
-    height: 45px;
-    width: 45px;
-    border-radius: 50%;
-    background-color: #1DCD9F;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.4s ease;
-    position: relative;
-    box-shadow: 0 0 0 0 rgb(255, 255, 255);
-    overflow: hidden;
-  }
-
-  .download-label .download-circle .download-icon {
-    color: #fff;
-    width: 30px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: all 0.4s ease;
-  }
-
-  .download-label .download-circle .download-square {
-    aspect-ratio: 1;
-    width: 15px;
-    border-radius: 2px;
-    background-color: #fff;
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: all 0.4s ease;
-  }
-
-  .download-label .download-circle::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color: #17b890;
-    width: 100%;
-    height: 0;
-    transition: all 0.4s ease;
-  }
-
-  .download-label:has(.download-input:checked) {
-    width: 57px;
-    animation: installed 0.4s ease 3.5s forwards;
-  }
-
-  .download-label:has(.download-input:checked)::before {
-    animation: rotate 3s ease-in-out 0.4s forwards;
-  }
-
-  .download-label .download-input:checked + .download-circle {
-    animation:
-      pulse 1s forwards,
-      circleDelete 0.2s ease 3.5s forwards;
-    rotate: 180deg;
-  }
-
-  .download-label .download-input:checked + .download-circle::before {
-    animation: installing 3s ease-in-out forwards;
-  }
-
-  .download-label .download-input:checked + .download-circle .download-icon {
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  .download-label .download-input:checked ~ .download-circle .download-square {
+@keyframes rotate {
+  0% {
+    transform: rotate(-90deg) translate(27px) rotate(0);
     opacity: 1;
     visibility: visible;
   }
-
-  .download-label .download-input:checked ~ .download-title {
+  99% {
+    transform: rotate(270deg) translate(27px) rotate(270deg);
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
     opacity: 0;
     visibility: hidden;
   }
+}
 
-  .download-label .download-input:checked ~ .download-title:last-child {
-    animation: showInstalledMessage 0.4s ease 3.5s forwards;
+@keyframes installed {
+  100% {
+    width: 150px;
+    border-color: #17b890;
   }
+}
 
-  @keyframes pulse {
-    0% {
-      scale: 0.95;
-      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
-    }
-    70% {
-      scale: 1;
-      box-shadow: 0 0 0 16px rgba(255, 255, 255, 0);
-    }
-    100% {
-      scale: 0.95;
-      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
-    }
+@keyframes circleDelete {
+  100% {
+    opacity: 0;
+    visibility: hidden;
   }
+}
 
-  @keyframes installing {
-    from {
-      height: 0;
-    }
-    to {
-      height: 100%;
-    }
+@keyframes showInstalledMessage {
+  100% {
+    opacity: 1;
+    visibility: visible;
+    right: 56px;
   }
+}
 
-  @keyframes rotate {
-    0% {
-      transform: rotate(-90deg) translate(27px) rotate(0);
-      opacity: 1;
-      visibility: visible;
-    }
-    99% {
-      transform: rotate(270deg) translate(27px) rotate(270deg);
-      opacity: 1;
-      visibility: visible;
-    }
-    100% {
-      opacity: 0;
-      visibility: hidden;
-    }
-  }
-
-  @keyframes installed {
-    100% {
-      width: 150px;
-      border-color: #17b890;
-    }
-  }
-
-  @keyframes circleDelete {
-    100% {
-      opacity: 0;
-      visibility: hidden;
-    }
-  }
-
-  @keyframes showInstalledMessage {
-    100% {
-      opacity: 1;
-      visibility: visible;
-      right: 56px;
-    }
-  }
-  
 /* Line Waves background */
 #line-waves-container {
   position: absolute;
@@ -637,27 +632,35 @@
   position: absolute !important;
   z-index: 0;
 }
-  
-  /* Custom Cursor */
-  * {
-    cursor: url('./assets/cursor.png'), auto;
-  }
-  
-  /* Custom cursor for interactive elements */
-  a, button, .button, .shadow__btn, .download-label, 
-  .project-card, .upcoming-card, .journey-card,
-  .example-2 .icon-content a,
-  .category-label,
-  input[type="checkbox"],
-  [data-scroll] {
-    cursor: url('./assets/cursor.png'), pointer;
-  }
-  
-  /* Ensure cursor works on all clickable elements */
-  [onclick], [role="button"], [tabindex] {
-    cursor: url('./assets/cursor.png'), pointer;
-  }
-  
+
+/* Custom Cursor */
+* {
+  cursor: url("./assets/cursor.png"), auto;
+}
+
+/* Custom cursor for interactive elements */
+a,
+button,
+.button,
+.shadow__btn,
+.download-label,
+.project-card,
+.upcoming-card,
+.journey-card,
+.example-2 .icon-content a,
+.category-label,
+input[type="checkbox"],
+[data-scroll] {
+  cursor: url("./assets/cursor.png"), pointer;
+}
+
+/* Ensure cursor works on all clickable elements */
+[onclick],
+[role="button"],
+[tabindex] {
+  cursor: url("./assets/cursor.png"), pointer;
+}
+
 /* Performance Optimizations */
 
 /* Lazy loading for images */
@@ -680,7 +683,7 @@
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-  
+
   .loading-text span,
   .button .hover-text,
   .shadow__btn,
@@ -709,9 +712,9 @@ html {
 
 /* Font loading optimization */
 @font-face {
-  font-family: 'Special Gothic Expanded One';
+  font-family: "Special Gothic Expanded One";
   font-display: swap;
-  src: url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+  src: url("https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap");
 }
 
 /* Critical CSS for above-the-fold content */
@@ -746,12 +749,12 @@ html {
 
 /* Custom cursor optimization */
 * {
-  cursor: url('./assets/cursor.png'), auto;
+  cursor: url("./assets/cursor.png"), auto;
 }
 
 /* Focus management for accessibility */
 *:focus {
-  outline: 2px solid #1DCD9F;
+  outline: 2px solid #1dcd9f;
   outline-offset: 2px;
 }
 
@@ -760,7 +763,7 @@ html {
   position: absolute;
   top: -40px;
   left: 6px;
-  background: #1DCD9F;
+  background: #1dcd9f;
   color: white;
   padding: 8px;
   text-decoration: none;
@@ -777,12 +780,12 @@ html {
   .no-print {
     display: none !important;
   }
-  
+
   body {
     background: white !important;
     color: black !important;
   }
-  
+
   .project-card,
   .journey-card {
     break-inside: avoid;
@@ -799,7 +802,6 @@ html {
   right: 30px;
   z-index: 1000;
 }
-
 
 .back2top-button {
   width: 40px;
@@ -830,7 +832,7 @@ html {
 .back2top-button:hover {
   width: 140px;
   border-radius: 50px;
-  background-color: #1DCD9F;
+  background-color: #1dcd9f;
   box-shadow: 0px 0px 0px 4px rgba(29, 205, 159, 0.4);
 }
 
@@ -873,7 +875,7 @@ html {
     width: 45px;
     height: 45px;
   }
-  
+
   .back2top-button:hover {
     width: 120px;
   }
@@ -918,7 +920,7 @@ html {
 .contact-form textarea:focus,
 .contact-form select:focus {
   outline: none;
-  border-color: #1DCD9F;
+  border-color: #1dcd9f;
   box-shadow: 0 0 0 3px rgba(29, 205, 159, 0.1);
   transition: all 0.3s ease;
 }
